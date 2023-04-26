@@ -1,0 +1,92 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                             
+                             <modelVersion>4.0.0</modelVersion>
+                             
+                             <groupId>com.socialmedia</groupId>
+                             <artifactId>SocialMedia</artifactId>
+                             <version>1.0-SNAPSHOT</version>
+                             
+                             <properties>
+                                 <java.version>1.8</java.version>
+                                 <spring.version>5.2.9.RELEASE</spring.version>
+                                 <hibernate.version>5.4.27.Final</hibernate.version>
+                                 <mysql.version>8.0.22</mysql.version>
+                                 <react.version>17.0.2</react.version>
+                             </properties>
+                             
+                             <dependencies>
+                                 <!-- Spring -->
+                                 <dependency>
+                                     <groupId>org.springframework</groupId>
+                                     <artifactId>spring-web</artifactId>
+                                     <version>${spring.version}</version>
+                                 </dependency>
+                                 <dependency>
+                                     <groupId>org.springframework</groupId>
+                                     <artifactId>spring-orm</artifactId>
+                                     <version>${spring.version}</version>
+                                 </dependency>
+                                 <dependency>
+                                     <groupId>org.springframework</groupId>
+                                     <artifactId>spring-security-web</artifactId>
+                                     <version>${spring.version}</version>
+                                 </dependency>
+                                 <dependency>
+                                     <groupId>org.springframework</groupId>
+                                     <artifactId>spring-security-config</artifactId>
+                                     <version>${spring.version}</version>
+                                 </dependency>
+                                 
+                                 <!-- Hibernate and JPA -->
+                                 <dependency>
+                                     <groupId>org.hibernate</groupId>
+                                     <artifactId>hibernate-core</artifactId>
+                                     <version>${hibernate.version}</version>
+                                 </dependency>
+                                 <dependency>
+                                     <groupId>org.hibernate</groupId>
+                                     <artifactId>hibernate-entitymanager</artifactId>
+                                     <version>${hibernate.version}</version>
+                                 </dependency>
+                                 <dependency>
+                                     <groupId>org.hibernate</groupId>
+                                     <artifactId>hibernate-validator</artifactId>
+                                     <version>${hibernate.version}</version>
+                                 </dependency>
+                                 <dependency>
+                                     <groupId>org.springframework.data</groupId>
+                                     <artifactId>spring-data-jpa</artifactId>
+                                     <version>${spring.version}</version>
+                                 </dependency>
+                                 <dependency>
+                                     <groupId>mysql</groupId>
+                                     <artifactId>mysql-connector-java</artifactId>
+                                     <version>${mysql.version}</version>
+                                 </dependency>
+                                 
+                                 <!-- React -->
+                                 <dependency>
+                                     <groupId>org.webjars</groupId>
+                                     <artifactId>react</artifactId>
+                                     <version>${react.version}</version>
+                                 </dependency>
+                                 <dependency>
+                                     <groupId>org.webjars</groupId>
+                                     <artifactId>react-dom</artifactId>
+                                     <version>${react.version}</version>
+                                 </dependency>
+                                 <dependency>
+                                     <groupId>org.webjars.npm</groupId>
+                                     <artifactId>react-router-dom</artifactId>
+                                     <version>5.2.0</version>
+                                 </dependency>
+                             </dependencies>
+                             
+                             <build>
+                                 <plugins>
+                                     <plugin>
+                                         <groupId>org

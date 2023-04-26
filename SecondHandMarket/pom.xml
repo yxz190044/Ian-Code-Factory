@@ -1,0 +1,81 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         
+         <modelVersion>4.0.0</modelVersion>
+         <groupId>com.codeuptopia.secondhandmarket</groupId>
+         <artifactId>second-hand-market-app</artifactId>
+         <version>1.0.0</version>
+         
+         <properties>
+             <maven.compiler.source>1.8</maven.compiler.source>
+             <maven.compiler.target>1.8</maven.compiler.target>
+             <javalin.version>4.0.0</javalin.version>
+             <guice.version>5.0.1</guice.version>
+             <shiro-guice.version>0.2.0</shiro-guice.version>
+             <stripe.version>19.20.0</stripe.version>
+             <jwt.version>0.11.2</jwt.version>
+             <elasticsearch.version>7.17.0</elasticsearch.version>
+         </properties>
+         
+         <dependencies>
+             <dependency>
+                 <groupId>mysql</groupId>
+                 <artifactId>mysql-connector-java</artifactId>
+                 <version>8.0.26</version>
+             </dependency>
+             
+             <dependency>
+                 <groupId>io.javalin</groupId>
+                 <artifactId>javalin</artifactId>
+                 <version>${javalin.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>com.google.inject</groupId>
+                 <artifactId>guice</artifactId>
+                 <version>${guice.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>com.github.theangrydev.shiro</groupId>
+                 <artifactId>shiro-guice</artifactId>
+                 <version>${shiro-guice.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>com.stripe</groupId>
+                 <artifactId>stripe-java</artifactId>
+                 <version>${stripe.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>io.jsonwebtoken</groupId>
+                 <artifactId>jjwt-api</artifactId>
+                 <version>${jwt.version}</version>
+             </dependency>
+             <dependency>
+                 <groupId>io.jsonwebtoken</groupId>
+                 <artifactId>jjwt-impl</artifactId>
+                 <version>${jwt.version}</version>
+                 <scope>runtime</scope>
+             </dependency>
+             <dependency>
+                 <groupId>io.jsonwebtoken</groupId>
+                 <artifactId>jjwt-jackson</artifactId>
+                 <version>${jwt.version}</version>
+                 <scope>runtime</scope>
+             </dependency>
+             <dependency>
+                 <groupId>org.elasticsearch.client</groupId>
+                 <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                 <version>${elasticsearch.version}</version>
+             </dependency>
+             <!-- other dependencies -->
+         </dependencies>
+         
+         <build>
+             <plugins>
+                 <!-- Maven plugins for building and packaging the app -->
+             </plugins>
+         </build>
+         
+</project>
