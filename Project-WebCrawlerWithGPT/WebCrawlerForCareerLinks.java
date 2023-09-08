@@ -17,7 +17,7 @@ import org.jsoup.select.Elements;
 public class WebCrawlerForCareerLinks {
     
     List<String> urls = readFileToList("careerLinks/handCopiedCareerLinks.txt", "\n");
-    HashSet<String> processedUrls = new HashSet<>(readFileToList("careerLinks/processedCareerLinks.txt", "\n"));
+    ConcurrentHashSet processedUrls = new ConcurrentHashSet(readFileToList("careerLinks/processedCareerLinks.txt", "\n"));
     private String queries = "1. Does this look like a career site page? 2. Does the page mention any software engineer developer jobs? 3. Does the software engineer developer jobs all mention where they locate? 4. Does any of the software engineer developer jobs locate in US? ";
     int querySize = 4;
 

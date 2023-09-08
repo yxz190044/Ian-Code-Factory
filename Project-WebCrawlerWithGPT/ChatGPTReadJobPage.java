@@ -16,7 +16,7 @@ public class ChatGPTReadJobPage {
     
     String content;
     String queries;
-    String apiKey = "your-api-key";
+    String apiKey = "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";
     String model = "gpt-3.5-turbo-0301";
     String role = "user";
     
@@ -55,5 +55,49 @@ public class ChatGPTReadJobPage {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

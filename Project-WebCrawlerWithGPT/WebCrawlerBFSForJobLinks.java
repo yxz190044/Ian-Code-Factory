@@ -14,14 +14,16 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+// This file is not ready to use yet.
+
 public class WebCrawlerBFSForJobLinks {
     
     // BFS with Queue and map
     // stopped working on it since 20230503
     // The web crawlers I do right now only iterate the current page
     
-    private HashSet<String> pagesCrawledSet = new HashSet<>();
-    private HashSet<String> pagesAddedSet = new HashSet<>();
+    private ConcurrentHashSet pagesCrawledSet = new ConcurrentHashSet();
+    private ConcurrentHashSet pagesAddedSet = new ConcurrentHashSet();
     private Queue<String> pagesToVisitQueue = new ArrayDeque<>();
     
     private String pagesCrawledFileName = "urlCrawled.txt";
